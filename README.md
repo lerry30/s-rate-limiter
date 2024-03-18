@@ -1,6 +1,5 @@
-## S-RATE-LIMITER
+## S-RATE-LIMITER ##
 
----
 
 S-RATE-LIMITER is a simple rate limiting package designed to help mitigate potential Distributed Denial of Service (DDoS) attacks by preventing overwhelming requests to the backend system. While it cannot guarantee complete protection against DDoS attacks, having an extra layer of defense is preferable to having none at all. This package can effectively block multiple requests at a time, making it suitable for managing multiple requests from a single user, but it may not be able to handle scenarios involving millions of users simultaneously.
 
@@ -30,13 +29,13 @@ const { message, denied } = rateLimit(userId); // Replace 'userId' with the actu
 
 The config function enables you to customize the behavior of the rate limiter. It accepts two parameters:
 
-- gapPerRequestInMins: This parameter specifies the desired rate limit in requests per minute. It determines the maximum number of requests allowed within a minute.
+1. gapPerRequestInMins: This parameter specifies the desired rate limit in requests per minute. It determines the maximum number of requests allowed within a minute.
 
-- options: An options object that allows for further fine-tuning of the rate limiting mechanism. This object contains the following parameters:
+2. options: An options object that allows for further fine-tuning of the rate limiting mechanism. This object contains the following parameters:
 
-    1. maxRequest: A numeric value indicating the maximum number of requests permitted within the specified time frame defined by longRestInMiliSec.
+    - maxRequest: A numeric value indicating the maximum number of requests permitted within the specified time frame defined by longRestInMiliSec.
 
-    2. longRestInMiliSec: This parameter specifies the duration (in milliseconds) for which the rate limiter will block subsequent requests once the maxRequest limit has been reached. After this timeout period, the rate limiter resets, allowing new requests to be processed.
+    - longRestInMiliSec: This parameter specifies the duration (in milliseconds) for which the rate limiter will block subsequent requests once the maxRequest limit has been reached. After this timeout period, the rate limiter resets, allowing new requests to be processed.
 
 ### Rate Limiting
 
