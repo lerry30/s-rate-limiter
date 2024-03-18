@@ -1,22 +1,22 @@
-## S-RATE-LIMITER ##
+## X-RATE-LIMITER ##
 
 
-S-RATE-LIMITER is a simple rate limiting package designed to help mitigate potential Distributed Denial of Service (DDoS) attacks by preventing overwhelming requests to the backend system. While it cannot guarantee complete protection against DDoS attacks, having an extra layer of defense is preferable to having none at all. This package can effectively block multiple requests at a time, making it suitable for managing multiple requests from a single user, but it may not be able to handle scenarios involving millions of users simultaneously.
+X-RATE-LIMITER is a simple rate limiting package designed to help mitigate potential Distributed Denial of Service (DDoS) attacks by preventing overwhelming requests to the backend system. While it cannot guarantee complete protection against DDoS attacks, having an extra layer of defense is preferable to having none at all. This package can effectively block multiple requests at a time, making it suitable for managing multiple requests from a single user, but it may not be able to handle scenarios involving millions of users simultaneously.
 
 ### Installation
 
-You can install S-RATE-LIMITER via npm:
+You can install X-RATE-LIMITER via npm:
 
 ```bash
-npm install s-rate-limiter
+npm install x-rate-limiter
 ```
 
 ### Usage
 
-Here's an example of how you can use S-RATE-LIMITER in your codebase:
+Here's an example of how you can use X-RATE-LIMITER in your codebase:
 
 ```js
-import { config, rateLimit } from 's-rate-limiter';
+import { config, rateLimit } from 'x-rate-limiter';
 
 // Configure the rate limiter
 config(0.5, { maxRequest: 20, longRestInMiliSec: 1000 * 60 * 1 });

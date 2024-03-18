@@ -1,5 +1,5 @@
 {
-  "name": "s-rate-limiter",
+  "name": "x-rate-limiter",
   "version": "1.0.0",
   "description": "",
   "type":"module",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lerry30/s-rate-limiter.git"
+    "url": "git+https://github.com/lerry30/x-rate-limiter.git"
   },
   "author": "John Lerry Samson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lerry30/s-rate-limiter/issues"
+    "url": "https://github.com/lerry30/x-rate-limiter/issues"
   },
-  "homepage": "https://github.com/lerry30/s-rate-limiter#readme"
+  "homepage": "https://github.com/lerry30/x-rate-limiter#readme"
 }
