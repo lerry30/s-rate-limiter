@@ -12,7 +12,7 @@
     "url": "git+https://github.com/lerry30/s-rate-limiter.git"
   },
   "author": "John Lerry Samson",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lerry30/s-rate-limiter/issues"
   },
